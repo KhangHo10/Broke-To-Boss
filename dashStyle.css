@@ -1,0 +1,133 @@
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  text-align: center; /* Center main body text */
+  background-color: black; /* Background color */
+  font-family: Arial, sans-serif; /* Default font */
+}
+
+img {
+  width: 60px; /* Logo width */
+  height: 70px; /* Logo height */
+  border-radius: 30%; /* Circular logo */
+}
+
+/* Navigation Styles */
+nav {
+  width: 100%; /* Full width */
+  height: 60px; /* Fixed height */
+  background-color: #82c2a2; /* Nav background color */
+  display: flex; 
+  align-items: center; 
+}
+
+.nav-container {
+  display: flex;
+  align-items: right; 
+  width: 100%; /* Full width */
+}
+
+.nav-links {
+  display: flex; 
+  margin-left: 570px; /* Pushes nav links to the right */
+}
+
+nav ul {
+  display: flex;
+}
+
+nav ul li {
+  list-style: none; 
+  position: relative; /* For dropdown positioning */
+  margin-left: 40px; /* Spacing between links */
+}
+
+nav ul li a {
+  display: block; /* Block level for links */
+  color: #222; /* Link color */
+  font-size: 16px; /* Font size */
+  font-weight: bold; /* Bold text */
+  padding: 20px 14px; /* Padding for links */
+  text-decoration: none; /* No underline */
+}
+
+/* Dropdown Menu Styles */
+nav ul li ul {
+  display: none; /* Hidden by default */
+  position: absolute; /* Positioning for dropdown */
+  background-color: #82c2a2; /* Dropdown background */
+  padding: 10px; /* Padding */
+  border-radius: 0 0 5px 5px; /* Rounded corners */
+  left: 0; /* Align dropdown to the left */
+  top: 100%; /* Position below the parent */
+}
+
+nav ul li:hover ul {
+  display: block; /* Show dropdown on hover */
+}
+
+nav ul li ul {
+  text-align: right; /* Align dropdown items */
+}
+
+nav ul li ul li {
+  text-align: left; /* Align individual items */
+  width: 180px; /* Fixed width for dropdown items */
+}
+
+nav ul li ul li a {
+  padding: 8px 14px; /* Padding for dropdown items */
+  border-radius: 4px; /* Rounded corners */
+  display: block; /* Full width clickable area */
+}
+
+nav ul li ul li a:hover {
+  background-color: #6d8074; /* Hover effect for dropdown */
+}
+
+/* Header Styles */
+h1 {
+  background-color: #82c2a2; /* Header background color */
+  color: #fff; /* Header text color */
+  padding: 20px; /* Padding */
+  display: inline-block; /* Inline block for centering */
+  border-radius: 8px; /* Rounded corners */
+  margin: 20px 0; /* Margins for spacing */
+}
+
+/* Section Styles */
+.section-container {
+  background: linear-gradient(135deg, #2c2c2c, #3a3a3a);
+  border-radius: 10px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+  margin: 20px auto; /* Center sections */
+  padding: 20px; /* Padding */
+  max-width: 600px; /* Max width */
+}
+
+.section-header {
+  background-color: #82c2a2; /* Section header background */
+  color: #fff; /* Section header text color */
+  padding: 20px; /* Padding */
+  display: inline-block; /* Inline block for centering */
+  border-radius: 8px; /* Rounded corners */
+  margin: 20px 0; /* Margins for spacing */
+}
+
+h3 {
+  margin: 20px 0; /* Margin for spacing */
+}
+
+/* List Styles */
+ul {
+  list-style: none; /* Remove default list styling */
+  padding: 0; /* Remove padding */
+}
+
+ul li {
+  margin: 10px 0; /* Spacing between list items */
+}
