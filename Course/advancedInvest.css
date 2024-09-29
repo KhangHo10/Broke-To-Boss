@@ -1,0 +1,469 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    text-align: center;
+    background-color: white;
+    font-family: Arial, sans-serif;
+  }
+  
+  img {
+    width: 60px; 
+    height: 70px; 
+    border-radius: 30%; 
+    margin-right: 10px; 
+    margin-left: 20px; 
+  }
+  
+  /* Navigation Styles */
+  nav {
+    width: 100%; 
+    height: 80px; /* Increased height for better visibility */
+    background-color: #82c2a2; 
+    display: flex; 
+    align-items: center; 
+  }
+  
+  .nav-container {
+    display: flex;
+    align-items: center; 
+    width: 90%; 
+  }
+  
+  .nav-links {
+    display: flex; 
+    margin-left: auto; 
+  }
+  
+  nav ul {
+    display: flex;
+  }
+  
+  nav ul li {
+    list-style: none; 
+    position: relative; 
+    margin-left: 40px; 
+  }
+  
+  nav ul li a {
+    display: block; 
+    color: #222; 
+    font-size: 16px; 
+    font-weight: bold; 
+    padding: 15px; /* Adjusted padding */
+    text-decoration: none; 
+    background-color: #82c2a2; /* Background for the box */
+    border-radius: 8px; /* Rounded corners for the box */
+    width: 60px; /* Fixed width for a square-like appearance */
+    height: 20px; /* Fixed height for a square-like appearance */
+    display: flex; /* Flexbox for centering text */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Box shadow */
+    transition: background-color 0.3s; /* Smooth background change */
+  }
+  
+  nav ul li a:hover {
+    background-color: #6d8074; /* Change background on hover */
+    color: #fff; /* Change text color on hover */
+  }
+  
+  /* Dropdown Menu Styles */
+  nav ul li ul {
+    display: none; 
+    position: absolute; 
+    background-color: #82c2a2; 
+    padding-left: 0;
+    border-radius: 5px 5px 5px 5px; 
+    left: 0; 
+    top: 100%; /* Position the dropdown directly below the parent item */
+    left: 0%;
+    width: auto;
+    
+  }
+  
+  nav ul li:hover > ul {
+    display: block; /* Show dropdown when hovering over the parent li */
+  }
+  
+  nav ul li ul {
+    text-align: left; /* Align text to the left */
+  }
+  
+  nav ul li ul li {
+    text-align: left; /* Align text to the left for each dropdown item */
+    width: auto; /* Remove fixed width for proper alignment */
+    left: -10%;
+  }
+  
+  nav ul li ul li a {
+    font-size: 12px; 
+    font-weight: bold;
+    padding: 10px 15px; /* Adjust padding for height and width */
+    border-radius: 4px; 
+    display: block; 
+    min-width: 150px; /* Minimum width for consistency */
+  }
+  
+  nav ul li ul li a:hover {
+    background-color: #6d8074; 
+  }
+  
+  /* Header Styles */
+  h1 {
+    background: linear-gradient(135deg, #82c2a2, #568f73);
+    color: #fff; 
+    padding: 20px; 
+    display: inline-block; 
+    border-radius: 8px; 
+    margin: 20px 0; 
+  }
+  
+  /* Section Styles */
+  .section-container {
+    background: linear-gradient(135deg, #e4dfdf, #c8c8c8);
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+    margin: 40px auto; 
+    padding: 20px; 
+    max-width: 600px; 
+  }
+  
+  .section-header {
+    color: black; 
+    padding: 20px; 
+    display: inline-block; 
+    border-radius: 8px; 
+    margin: 20px 0; 
+  }
+  
+  p {
+    line-height: 1.6; /* Increase space between lines */
+    text-align: left; /* Align text to the left */
+    margin: 10px 0; /* Optional: add margin for space between paragraphs */
+  }
+  
+  /* Quiz */
+  .app {
+    background: linear-gradient(135deg, #568f73, #82c2a2);
+    color: #fff; 
+    padding: 20px; 
+    display: inline-block; 
+    border-radius: 8px; 
+    margin: 20px 0;
+  }
+  
+  .app h1 {
+    font-size: 25px;
+    color: white;
+    font-weight: 600;
+    border-bottom: 1px solid #333;
+    padding-bottom: 30px;
+  }
+  
+  .quiz {
+    padding: 20px 0;
+  }
+  
+  .quiz h2{
+    font-size: 18px;
+    color: #001e4d;
+    font-weight: 6;
+  }
+  
+  .btn {
+    background: #fff;
+    color: #222;
+    font-weight: 500;
+    width: 100%;
+    border: 1px solid #222;
+    padding: 10px;
+    margin: 10px 0;
+    text-align: left;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .btn:hover:not([disabled]) {
+    background: #222;
+    color: #fff;
+  
+  }
+  
+  .btn:disabled{
+    cursor: no-drop;;
+  }
+  
+  #next-btn {
+    background: #001e4d;
+    color: #fff;
+    font-weight: 500;
+    width: 150px;
+    border: 0;
+    padding: 10px;
+    margin: 20px auto 0;
+    border-radius: 4px;
+    cursor: pointer;
+    display: none;
+  }
+  
+  .correct {
+    background: #9aeabc;
+  }
+  
+  .incorrect {
+  background: #ff9393;
+  }
+  
+  h3 {
+    margin: 20px 0; 
+  }
+  
+  /* List Styles */
+  ul {
+    list-style: none; 
+    padding: 0; 
+  }
+  
+  ul li {
+    margin: 10px 0; 
+  }
+  /* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    text-align: center;
+    background-color: white;
+    font-family: Arial, sans-serif;
+  }
+  
+  img {
+    width: 60px; 
+    height: 70px; 
+    border-radius: 30%; 
+    margin-right: 10px; 
+    margin-left: 20px; 
+  }
+  
+  /* Navigation Styles */
+  nav {
+    width: 100%; 
+    height: 80px; /* Increased height for better visibility */
+    background-color: #82c2a2; 
+    display: flex; 
+    align-items: center; 
+  }
+  
+  .nav-container {
+    display: flex;
+    align-items: center; 
+    width: 90%; 
+  }
+  
+  .nav-links {
+    display: flex; 
+    margin-left: auto; 
+  }
+  
+  nav ul {
+    display: flex;
+  }
+  
+  nav ul li {
+    list-style: none; 
+    position: relative; 
+    margin-left: 40px; 
+  }
+  
+  nav ul li a {
+    display: block; 
+    color: #222; 
+    font-size: 16px; 
+    font-weight: bold; 
+    padding: 15px; /* Adjusted padding */
+    text-decoration: none; 
+    background-color: #82c2a2; /* Background for the box */
+    border-radius: 8px; /* Rounded corners for the box */
+    width: 60px; /* Fixed width for a square-like appearance */
+    height: 20px; /* Fixed height for a square-like appearance */
+    display: flex; /* Flexbox for centering text */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Box shadow */
+    transition: background-color 0.3s; /* Smooth background change */
+  }
+  
+  nav ul li a:hover {
+    background-color: #6d8074; /* Change background on hover */
+    color: #fff; /* Change text color on hover */
+  }
+  
+  /* Dropdown Menu Styles */
+  nav ul li ul {
+    display: none; 
+    position: absolute; 
+    background-color: #82c2a2; 
+    padding-left: 0;
+    border-radius: 5px 5px 5px 5px; 
+    left: 0; 
+    top: 100%; /* Position the dropdown directly below the parent item */
+    left: 0%;
+    width: auto;
+    
+  }
+  
+  nav ul li:hover > ul {
+    display: block; /* Show dropdown when hovering over the parent li */
+  }
+  
+  nav ul li ul {
+    text-align: left; /* Align text to the left */
+  }
+  
+  nav ul li ul li {
+    text-align: left; /* Align text to the left for each dropdown item */
+    width: auto; /* Remove fixed width for proper alignment */
+    left: -10%;
+  }
+  
+  nav ul li ul li a {
+    font-size: 12px; 
+    font-weight: bold;
+    padding: 10px 15px; /* Adjust padding for height and width */
+    border-radius: 4px; 
+    display: block; 
+    min-width: 150px; /* Minimum width for consistency */
+  }
+  
+  nav ul li ul li a:hover {
+    background-color: #6d8074; 
+  }
+  
+  /* Header Styles */
+  h1 {
+    background: linear-gradient(135deg, #82c2a2, #568f73);
+    color: #fff; 
+    padding: 20px; 
+    display: inline-block; 
+    border-radius: 8px; 
+    margin: 20px 0; 
+  }
+  
+  /* Section Styles */
+  .section-container {
+    background: linear-gradient(135deg, #e4dfdf, #c8c8c8);
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+    margin: 40px auto; 
+    padding: 20px; 
+    max-width: 600px; 
+  }
+  
+  .section-header {
+    color: black; 
+    padding: 20px; 
+    display: inline-block; 
+    border-radius: 8px; 
+    margin: 20px 0; 
+  }
+  
+  p {
+    line-height: 1.6; /* Increase space between lines */
+    text-align: left; /* Align text to the left */
+    margin: 10px 0; /* Optional: add margin for space between paragraphs */
+  }
+  
+  /* Quiz */
+  .app {
+    background: linear-gradient(135deg, #568f73, #82c2a2);
+    color: #fff; 
+    padding: 20px; 
+    display: inline-block; 
+    border-radius: 8px; 
+    margin: 20px 0;
+  }
+  
+  .app h1 {
+    font-size: 25px;
+    color: white;
+    font-weight: 600;
+    border-bottom: 1px solid #333;
+    padding-bottom: 30px;
+  }
+  
+  .quiz {
+    padding: 20px 0;
+  }
+  
+  .quiz h2{
+    font-size: 18px;
+    color: #001e4d;
+    font-weight: 6;
+  }
+  
+  .btn {
+    background: #fff;
+    color: #222;
+    font-weight: 500;
+    width: 100%;
+    border: 1px solid #222;
+    padding: 10px;
+    margin: 10px 0;
+    text-align: left;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .btn:hover:not([disabled]) {
+    background: #222;
+    color: #fff;
+  
+  }
+  
+  .btn:disabled{
+    cursor: no-drop;;
+  }
+  
+  #next-btn {
+    background: #001e4d;
+    color: #fff;
+    font-weight: 500;
+    width: 150px;
+    border: 0;
+    padding: 10px;
+    margin: 20px auto 0;
+    border-radius: 4px;
+    cursor: pointer;
+    display: none;
+  }
+  
+  .correct {
+    background: #9aeabc;
+  }
+  
+  .incorrect {
+  background: #ff9393;
+  }
+  
+  h3 {
+    margin: 20px 0; 
+  }
+  
+  /* List Styles */
+  ul {
+    list-style: none; 
+    padding: 0; 
+  }
+  
+  ul li {
+    margin: 10px 0; 
+  }
+  
