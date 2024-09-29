@@ -26,6 +26,7 @@ function markCourseAsCompleted(link) {
 
   console.log(`Completed: ${courseName}`);
 }
+<<<<<<< HEAD
 
 document.addEventListener('DOMContentLoaded', () => {
   const chatHistory = document.querySelector('.chat-history');
@@ -68,3 +69,5 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 
+=======
+>>>>>>> 507b0bd9e72c1db348d641c9886fc02728e84ee5

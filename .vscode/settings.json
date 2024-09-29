@@ -1,20 +1,35 @@
 {
+<<<<<<< HEAD
     "livePreview.defaultPreviewPath": "/contactPage/contactPage.html",
     "sqltools.connections": [
         {
             "mysqlOptions": {
                 "authProtocol": "default",
+=======
+    "sqltools.connections": [
+        {
+            "mysqlOptions": {
+                "authProtocol": "xprotocol",
+>>>>>>> 507b0bd9e72c1db348d641c9886fc02728e84ee5
                 "enableSsl": "Disabled"
             },
             "previewLimit": 50,
             "server": "localhost",
             "port": 33060,
             "driver": "MySQL",
+<<<<<<< HEAD
             "username": "root",
             "database": "Broke2Boss",
             "name": "MySQL Local",
             "connectionTimeout": 30,
             "password": ""
+=======
+            "name": "Broke2Boss",
+            "database": "money",
+            "username": "root",
+            "password": "Vroom.003",
+            "connectionTimeout": 30
+>>>>>>> 507b0bd9e72c1db348d641c9886fc02728e84ee5
         }
     ]
 }

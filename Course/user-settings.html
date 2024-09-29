@@ -11,6 +11,7 @@
             margin: 40px;
             background-color: #f8f9fa; /* Light gray background */
         }
+<<<<<<< HEAD
 
         img {
   width: 60px; 
@@ -106,6 +107,8 @@ nav ul li ul li a:hover {
   background-color: #6d8074; 
 }
 
+=======
+>>>>>>> 507b0bd9e72c1db348d641c9886fc02728e84ee5
         h1 {
             text-align: center;
             color: #2c3e50; /* Dark blue-gray */
@@ -182,6 +185,7 @@ nav ul li ul li a:hover {
 </head>
 <body>
 
+<<<<<<< HEAD
     <nav>
         <div class="nav-container">
             <img src="Broke2Bosss.png" alt="My Website Logo" class="logo">
@@ -202,6 +206,9 @@ nav ul li ul li a:hover {
     </nav>
 
 
+=======
+<h1>Account Settings</h1>
+>>>>>>> 507b0bd9e72c1db348d641c9886fc02728e84ee5
 
 <div>
     <button class="button" onclick="scrollToSection('info')">Info</button>
@@ -291,21 +298,51 @@ nav ul li ul li a:hover {
     };
 
     function displayUserInfo(username, phone, email) {
+<<<<<<< HEAD
         document.getElementById('displayUsername').innerText = `Name: ${username}`;
         document.getElementById('displayPhone').innerText = `Phone: ${phone}`;
         document.getElementById('displayEmail').innerText = `Email: ${email}`;
     }
+=======
+    document.getElementById('displayUsername').innerText = username ? `Name: ${username}` : '';
+    document.getElementById('displayPhone').innerText = phone ? `Phone: ${phone}` : '';
+    document.getElementById('displayEmail').innerText = email ? `Email: ${email}` : '';
+}
+>>>>>>> 507b0bd9e72c1db348d641c9886fc02728e84ee5
 
     function scrollToSection(section) {
         document.getElementById(section).scrollIntoView({ behavior: 'smooth' });
     }
 
     function confirmDelete() {
+<<<<<<< HEAD
         const confirmation = confirm("Are you sure you want to delete your account?");
         if (confirmation) {
             alert("Your account has been deleted.");
         }
     }
+=======
+    const confirmation = confirm("Are you sure you want to delete your account?");
+    if (confirmation) {
+        // Clear user information from localStorage
+        localStorage.removeItem('username');
+        localStorage.removeItem('phone');
+        localStorage.removeItem('email');
+
+        // Clear displayed information
+        document.getElementById('displayUsername').innerText = '';
+        document.getElementById('displayPhone').innerText = '';
+        document.getElementById('displayEmail').innerText = '';
+
+        // Clear input fields
+        document.getElementById('username').value = '';
+        document.getElementById('phone').value = '';
+        document.getElementById('email').value = '';
+
+        alert("Your account has been deleted.");
+    }
+}
+>>>>>>> 507b0bd9e72c1db348d641c9886fc02728e84ee5
 </script>
 
 </body>
