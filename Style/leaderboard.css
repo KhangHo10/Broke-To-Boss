@@ -1,0 +1,232 @@
+/* Reset default margins and paddings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #032312;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+nav {
+    width: 100%; 
+    height: 80px; /* Increased height for better visibility */
+    background-color: #82c2a2; 
+    display: flex; 
+    align-items: center; 
+  }
+  
+  .nav-container {
+    display: flex;
+    align-items: center; 
+    width: 90%; 
+  }
+  
+  .nav-links {
+    display: flex; 
+    margin-left: auto; 
+  }
+  
+  nav ul {
+    display: flex;
+  }
+  
+  nav ul li {
+    list-style: none; 
+    position: relative; 
+    margin-left: 40px; 
+    right: -10%;
+  }
+  
+  nav ul li a {
+    display: block; 
+    color: #222; 
+    font-size: 16px; 
+    font-weight: bold; 
+    padding: 15px; /* Adjusted padding */
+    text-decoration: none; 
+    background-color: #82c2a2; /* Background for the box */
+    border-radius: 8px; /* Rounded corners for the box */
+    width: 100px; /* Fixed width for a square-like appearance */
+    height: 45px; /* Fixed height for a square-like appearance */
+    display: flex; /* Flexbox for centering text */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Box shadow */
+    transition: background-color 0.3s; /* Smooth background change */
+  }
+  
+  nav ul li a:hover {
+    background-color: #6d8074; /* Change background on hover */
+    color: #fff; /* Change text color on hover */
+  }
+  
+  /* Dropdown Menu Styles */
+  nav ul li ul {
+    display: none; 
+    position: absolute; 
+    background-color: #82c2a2; 
+    padding-left: 0;
+    border-radius: 5px 5px 5px 5px; 
+    left: 0; 
+    top: 100%; /* Position the dropdown directly below the parent item */
+    left: 0%;
+    width: auto;
+    
+  }
+  
+  nav ul li:hover > ul {
+    display: block; /* Show dropdown when hovering over the parent li */
+  }
+  
+  nav ul li ul {
+    text-align: left; /* Align text to the left */
+  }
+  
+  nav ul li ul li {
+    text-align: left; /* Align text to the left for each dropdown item */
+    width: auto; /* Remove fixed width for proper alignment */
+    left: -10%;
+  }
+  
+  nav ul li ul li a {
+    font-size: 12px; 
+    font-weight: bold;
+    padding: 10px 15px; /* Adjust padding for height and width */
+    border-radius: 4px; 
+    display: block; 
+    min-width: 150px; /* Minimum width for consistency */
+  }
+  
+  nav ul li ul li a:hover {
+    background-color: #6d8074; 
+  }
+  
+  /* Header Styles */
+  h1 {
+    background-color: #82c2a2; 
+    color: #fff; 
+    padding: 20px; 
+    display: inline-block; 
+    border-radius: 8px; 
+    margin: 20px 0; 
+  }
+
+  ul {
+    list-style: none; 
+    padding: 0; 
+  }
+  
+  ul li {
+    margin: 10px 0; 
+  }
+
+
+/* Header styling */
+.leaderboard-header {
+    width: 100%;
+    max-width: 1500px;
+    padding: 20px;
+    background-color: #82c2a2;
+    color: white;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.logo-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.logo {
+    height: 100px;
+    margin-bottom: 10px;
+}
+
+.user-info {
+    text-align: left;
+}
+
+.user-info h2, .user-info h4 {
+    margin: 5px 0;
+}
+
+.user-info p {
+    margin-top: 10px;
+}
+
+/* Main content and leaderboard styling */
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1500px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.leaderboard-container, .overview-container {
+    width: 48%; /* Make sure these two containers share space */
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    margin-bottom: 20px; /* Adds space between sections */
+}
+
+.leaderboard-item, .overview-item, .badge-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.leaderboard-item:last-child, .overview-item:last-child, .badge-item:last-child {
+    border-bottom: none;
+}
+
+/* Specific styling for leaderboard and overview sections */
+.position, .streak, .money, .badge {
+    font-weight: bold;
+    color: #1f764a;
+    width: 10%; /* Adjust width for text labels */
+}
+
+.username, .den {
+    flex-grow: 1;
+    text-align: center;
+    width: 10%
+}
+
+.money {
+    font-size: 15px;
+    color: #1f764a;
+}
+
+/* Badge section at the bottom */
+.ranking-container {
+    width: 100%; /* Make it full width */
+    max-width: 10000px; /* Optional max width */
+    margin-top: 20px; /* Add space above the badge section */
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+.ranking-item {
+    display: flex;
+    color: #04143d;
+    justify-content: left;
+    align-items: center;
+    padding: 20px;
+}
